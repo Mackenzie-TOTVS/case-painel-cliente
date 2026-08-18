@@ -1,0 +1,97 @@
+{
+  "cliente": {
+    "id": "CLI-001",
+    "nome": "Mariana Costa",
+    "segmento": "Private",
+    "email": "mariana.costa@email.com",
+    "telefone": "(11) 99999-1234"
+  },
+
+  "instituicoes": [
+    {
+      "nome": "Itau",
+      "posicoes": [
+        {
+          "produto": "CDB",
+          "categoria": "Renda Fixa",
+          "valor": 420000
+        },
+        {
+          "produto": "Acoes",
+          "categoria": "Renda Variavel",
+          "valor": 180000
+        },
+        {
+          "produto": "Fundo de Credito",
+          "categoria": "Fundos",
+          "valor": 200000
+        }
+      ]
+    },
+
+    {
+      "nome": "BTG Pactual",
+      "posicoes": [
+        {
+          "produto": "Tesouro Direto",
+          "categoria": "Renda Fixa",
+          "valor": 350000
+        },
+        {
+          "produto": "Fundo Multimercado",
+          "categoria": "Fundos",
+          "valor": 400000
+        },
+        {
+          "produto": "Dolar",
+          "categoria": "Cambio",
+          "valor": 200000
+        }
+      ]
+    },
+
+    {
+      "nome": "XP Investimentos",
+      "posicoes": [
+        {
+          "produto": "LCI",
+          "categoria": "Renda Fixa",
+          "valor": 300000
+        },
+        {
+          "produto": "Acoes Brasileiras",
+          "categoria": "Renda Variavel",
+          "valor": 200000
+        },
+        {
+          "produto": "Fundo Imobiliario",
+          "categoria": "Fundos",
+          "valor": 100000
+        }
+      ]
+    }
+  ],
+
+  "interacoes": [
+    {
+      "data": "2026-08-12",
+      "canal": "Reuniao",
+      "descricao": "Revisao da carteira e objetivos financeiros."
+    },
+    {
+      "data": "2026-07-25",
+      "canal": "Telefone",
+      "descricao": "Cliente demonstrou interesse em diversificacao internacional."
+    },
+    {
+      "data": "2026-07-10",
+      "canal": "Email",
+      "descricao": "Envio do relatorio mensal de investimentos."
+    },
+    {
+      "data": "2026-06-18",
+      "canal": "Reuniao",
+      "descricao": "Discussao sobre perfil de risco e horizonte de investimento."
+    }
+  ]
+}
