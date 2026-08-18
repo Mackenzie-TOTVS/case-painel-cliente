@@ -174,16 +174,17 @@ Exemplo de evolução:
 Os commits deverão representar mudanças reais do projeto e não serão agrupados artificialmente ao final.
 
 ---
-
 ## Registro de propostas da IA corrigidas ou rejeitadas
 
-Esta seção será atualizada durante o desenvolvimento.
+### Decisão 1 - Servidor local da aplicação
 
-Até o momento, ainda não houve uma proposta técnica de implementação rejeitada após o início da construção.
+Durante a orientação inicial com IA, foi considerada a possibilidade de utilizar Node.js também para servir os arquivos da aplicação localmente.
 
-Sempre que uma sugestão da IA for considerada inadequada, registrarei:
+Ao avançar na implementação, analisei que o protótipo não possui backend, banco de dados ou rotas de servidor. A aplicação precisa apenas servir arquivos HTML, CSS, JavaScript e JSON para que o navegador consiga utilizar `fetch`.
 
-- o que a IA sugeriu;
-- qual problema identifiquei;
-- qual decisão tomei;
-- por que escolhi a alternativa.
+Por esse motivo, decidi não adicionar um servidor Node.js ao projeto.
+
+Para executar o protótipo localmente, mantive uma solução mais simples:
+
+```bash
+python3 -m http.server 5500
