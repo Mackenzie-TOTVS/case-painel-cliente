@@ -1,35 +1,59 @@
 # AGENTS.md
 
-## Contexto do projeto
+## Contexto e propósito do projeto
 
-Este projeto é um protótipo de um Painel do Cliente para um Advisor de uma gestora de investimentos.
+Este repositório contém um protótipo de um Painel do Cliente para um Advisor de uma gestora de investimentos.
 
-O objetivo é consolidar dados fictícios de patrimônio de um cliente em uma única tela.
+O objetivo da aplicação é reunir em uma única tela informações fictícias de um cliente, incluindo:
 
-## Tecnologias escolhidas
+- dados pessoais e de contato;
+- patrimônio distribuído entre diferentes instituições;
+- patrimônio total consolidado;
+- distribuição da carteira por categoria;
+- histórico de relacionamento;
+- oportunidade de cross-sell.
 
-O projeto utilizará:
+O projeto foi desenvolvido como parte de um case técnico e deve permanecer simples, legível e fácil de explicar em uma entrevista.
 
-- HTML
-- CSS
-- JavaScript
-- JSON
+---
+
+## Stack utilizada
+
+O projeto utiliza:
+
+- HTML;
+- CSS;
+- JavaScript puro;
+- JSON para os dados fictícios;
+- Node.js apenas para execução dos testes automatizados;
+- `node:test` para os testes.
 
 Não utilizar frameworks de frontend neste projeto.
 
-## Regras iniciais
+Não adicionar dependências externas sem uma necessidade clara.
 
-- Manter o projeto simples.
-- Utilizar nomes de variáveis fáceis de entender.
-- Não adicionar bibliotecas sem necessidade.
-- Os dados devem vir do arquivo JSON.
-- O patrimônio total deve ser calculado.
-- Os percentuais de alocação devem ser calculados.
-- Evitar colocar regras de negócio diretamente no HTML.
-- As funções JavaScript devem possuir responsabilidades pequenas e claras.
+---
 
-## Objetivo para código gerado por IA
+## Estrutura atual do projeto
 
-Todo código gerado deve ser fácil de explicar durante uma entrevista técnica.
-
-Caso exista uma solução simples e uma solução complexa para o mesmo problema, preferir a solução simples.
+```text
+/
+├── data/
+│   └── client.json
+│
+├── src/
+│   ├── app.js
+│   └── domain.js
+│
+├── tests/
+│   └── domain.test.js
+│
+├── index.html
+├── styles.css
+├── package.json
+├── 01-INCEPTION.md
+├── 02-PLAN.md
+├── 03-OPERATIONS.md
+├── AGENTS.md
+├── README.md
+└── historico/
